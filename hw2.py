@@ -30,21 +30,21 @@ while True:
     
 
     # Perform the calculation
-    if operator == "+":
-        result = operand1 + operand2
-    elif operator == "-":
-        result = operand1 - operand2
-    elif operator == "*":
-        result = operand1 * operand2
-    elif operator == "/":
-        if operand2 != 0:
-            result = operand1 / operand2
+        if operator == "+":
+            result = operand1 + operand2
+        elif operator == "-":
+            result = operand1 - operand2
+        elif operator == "*":
+            result = operand1 * operand2
+        elif operator == "/":
+            if operand2 != 0:
+                result = operand1 / operand2
+            else:
+                # Check if the second operand is 0 and show the required message to the user.
+                print("Error: Division by zero is not allowed.")
+                continue
         else:
-            # Check if the second operand is 0 and show the required message to the user.
-            print("Error: Division by zero is not allowed.")
-            continue
-    else:
-        # If the operator is invalid, set the result as an error message. 
-        result = "Invalid operator."
+            # If the operator is invalid, set the result as an error message. 
+            result = "Invalid operator."
 
-    print("Result:", result)
+        print("Result:", result)
